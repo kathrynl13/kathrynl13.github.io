@@ -1,0 +1,146 @@
+/*CSS FOR HEADER AND ALL PAGES */
+body{
+    background-color: #f3f4ea;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.headerSection{
+    text-align: center;
+    position: relative;
+    text-align: center;
+    /*border: 5px solid #203a02;*/
+}
+.headerImage{
+    width: 100%;
+}
+.headerText{
+    font-size: 50px;
+    position: absolute;
+    top: 15%;   /*moves text to 20% of top*/
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+}
+
+.menuSection{
+   border: 5px solid #203a02;
+   background-color: #203a02;
+}
+.menuSection ul{
+    list-style: square;    /*removes bullet points*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+ }
+ .menuSection li{
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+    padding: 15px;
+    width: 100px;
+    background-color: #203a02;
+    border: 5px solid #c4d61d;
+    border-radius: 15px;
+ }
+ .menuSection a:link{
+    color: white;}
+ .menuSection a:visited{
+    color: white;}
+ .menuSection a:active{
+    color: white;}
+
+
+/*CSS FOR ABOUT/MAIN PAGE*/
+#mainImage{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin: 50px;
+}
+#welcomeSection{
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*CSS FOR HIKES PAGE*/
+.hikesBody{
+    margin: 50px;
+
+}
+.hikesImage{
+    width: 400px;
+    float: right;
+}
+.hikeEntry{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*CSS FOR GEAR PAGE*/
+table{
+    float: left;
+    margin: 50px;
+}
+table, th, td{
+    text-align: center;
+    border: 3px solid black;
+}
+th{
+    background-color: #203a02;
+    color: white;
+}
+td{
+
+}
+#gearImage{
+    float: right;
+    width: 300px;
+    margin: 50px;
+}
+#gearImage2{
+    width: 500px;
+    margin: 50px;
+}
+#gearHeader{
+    margin: 50px;
+}
+
+/*CSS FOR SAFETY PAGE*/
+/*#safetyVideo{ /*this is not working to center the video
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+#safetyImage{
+    width: 400px;
+    height: 250px;
+}
+.safetyChapter{
+    margin: 50px;
+}
+
+/*CSS FOR CONTACT PAGE*/
+.contactBody{
+    margin: 50px;
+}
+.formBox{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+}
+form{
+    float: left;
+}
+#contactImage{
+    float: right;
+    width: 500px;
+}
+
+
