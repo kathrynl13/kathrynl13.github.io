@@ -1,15 +1,13 @@
-/*CSS FOR HEADER AND ALL PAGES */
+/*CSS FOR HEADER / FOOTER AND ALL PAGES */
 body{
     background-color: #f3f4ea;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
-
 .headerSection{
     text-align: center;
     position: relative;
     text-align: center;
-    /*border: 5px solid #203a02;*/
 }
 .headerImage{
     width: 100%;
@@ -20,20 +18,16 @@ body{
     top: 15%;   /*moves text to 20% of top*/
     left: 50%; 
     transform: translate(-50%, -50%);
-
 }
-
 .menuSection{
    border: 5px solid #203a02;
    background-color: #203a02;
 }
 .menuSection ul{
-    list-style: square;    /*removes bullet points*/
-    list-style: none;
+    list-style: none;   /*removes bullet points*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-decoration: none;
  }
  .menuSection li{
     text-align: center;
@@ -46,12 +40,21 @@ body{
     border-radius: 15px;
  }
  .menuSection a:link{
-    color: white;}
- .menuSection a:visited{
-    color: white;}
- .menuSection a:active{
-    color: white;}
-
+    color: #f3f4ea;
+    text-decoration: none;}
+.menuSection a:visited{
+    color: #f3f4ea;
+    text-decoration: none;
+}
+.menuSection a:hover{
+    color: #f3f4ea;
+    text-decoration: underline;
+}
+.footerSection{
+    text-align: center;
+    background-color: #203a02;
+    color: #f3f4ea;
+}
 
 /*CSS FOR ABOUT/MAIN PAGE*/
 #mainImage{
@@ -63,6 +66,7 @@ body{
 #welcomeSection{
     margin: 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -70,7 +74,6 @@ body{
 /*CSS FOR HIKES PAGE*/
 .hikesBody{
     margin: 50px;
-
 }
 .hikesImage{
     width: 400px;
@@ -78,16 +81,13 @@ body{
 }
 .hikeEntry{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 
 /*CSS FOR GEAR PAGE*/
-table{
-    float: left;
-    margin: 50px;
-}
 table, th, td{
+    margin: 50px;
     text-align: center;
     border: 3px solid black;
 }
@@ -95,25 +95,16 @@ th{
     background-color: #203a02;
     color: white;
 }
-td{
-
-}
 #gearImage{
-    float: right;
-    width: 750px;
+    width: 450px;
     margin: 50px;
 }
+
 #gearHeader{
     margin: 50px;
 }
 
 /*CSS FOR SAFETY PAGE*/
-/*#safetyVideo{ /*this is not working to center the video
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 #safetyImage{
     width: 400px;
     height: 250px;
@@ -125,6 +116,8 @@ td{
 /*CSS FOR CONTACT PAGE*/
 .contactBody{
     margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .formBox{
     display: flex;
@@ -137,6 +130,9 @@ form{
 #contactImage{
     float: right;
     width: 500px;
+}
+.joinUsText{
+    margin: 50px;
 }
 
 
