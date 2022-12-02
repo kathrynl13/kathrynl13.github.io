@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stollayto: Get Stokens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/tonnelier" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="navBanner">
+        <br>
+        <div class="navMenu">
+            <img src="images/logo.png" alt="">
+                <a href="index.html" >Home</a>
+                <a href="stokens.html" class="border">Get Stokens</a>
+                <a href="play.html">Play</a>
+                <a href="userManual.html">User Manual</a>
+                <a href="prizesExplain.html">Where Do Prizes Come From</a>
+                <a href="governance.html">Governance</a>
+        </div>
+    </div>
+    <div style="padding-left: 500px;padding-right: 500px;">
+        <h3 class="border" style="background-color:#DEEFE7; padding: 5px;">Connect Wallet</h3>
+    </div>
+
+    <h4 style="color:#DEEFE7; text-align: center;">Choose asset type to deposit:</h4>
+
+    <div class="depositTypes" style="display: flex;flex-direction:row;align-items: center;justify-content: center;">
+        <div id="pool1" class="border" style="background-color:#DEEFE7; padding: 5px; margin:20px;width: 120px;height: 70px;">
+            <p style="text-align: center;">XAI + FRAX + USDC</p>
+        </div>
+        <div id="pool2" class="border" style="background-color:#DEEFE7; padding: 5px;margin:20px;width: 120px;height: 70px;">
+            <p style="text-align: center;">USDT + WBTC + ETH</p>
+        </div>
+        <div id="pool3" class="border" style="background-color:#DEEFE7; padding: 5px;margin:20px;width: 120px;height: 70px;">
+            <p style="text-align: center;">ETH + CRV</p>
+        </div>
+        <div id="pool4" class="border" style="background-color:#DEEFE7; padding: 5px;margin:20px;width: 120px;height: 70px;">
+            <p style="text-align: center;">CRV</p>
+        </div>
+    </div>
+
+    <div id="enterAmount" style="display: none;">
+        <div id="token1" style="display: flex;flex-direction:row;align-items:center;justify-content:center">
+            <h3 id="token1text" style="margin-right: 10px;">XAI:</h3>
+            <form id="send-container">
+                <input class="border" type="text" style="background-color: #DEEFE7;border-radius: 10px;border-width: 5px;" value="0">
+            </form>
+        </div>
+        <div id="token2" style="display: flex;flex-direction:row;align-items:center;justify-content:center">
+            <h3 id="token2text" style="margin-right: 10px;">FRAX:</h3>
+            <form id="send-container">
+                <input class="border" type="text" style="background-color: #DEEFE7;border-radius: 10px;border-width: 5px;" value="0">
+            </form>
+        </div>
+        <div id="token3" id="token3text" style="display: flex;flex-direction:row;align-items:center;justify-content:center">
+            <h3 style="margin-right: 10px;">USDC:</h3>
+            <form id="send-container">
+                <input class="border" type="text" style="background-color: #DEEFE7;border-radius: 10px;border-width: 5px;" value="0">
+            </form>
+        </div>
+        <div id="depositButton" style="padding-left: 500px;padding-right: 500px;">
+            <h3 class="border" style="background-color:#DEEFE7; padding: 5px;">Deposit</h3>
+        </div>
+    </div>
+    <div id="depositComplete" style="padding-left: 500px;padding-right: 500px;display: none;text-align: center;">
+        <h3 class="border" style="background-color:#DEEFE7; padding: 5px;">Deposit Complete Check Wallet for Tokens</h3>
+    </div>
+</body>
+<script>
+$('#pool1').click(function(){
+    document.getElementById('depositComplete').style.display = "none"
+    document.getElementById('enterAmount').style.display = "block"
+    document.getElementById('token1text').innerHTML = "XAI"
+    document.getElementById('token2text').innerHTML = "FRAX"
+    document.getElementById('token3text').innerHTML = "USDC"
+})
+$('#pool2').click(function(){
+    document.getElementById('depositComplete').style.display = "none"
+    document.getElementById('enterAmount').style.display = "block"
+    document.getElementById('token1text').innerHTML = "USDT"
+    document.getElementById('token2text').innerHTML = "WBTC"
+    document.getElementById('token3text').innerHTML = "ETH"
+})
+$('#pool3').click(function(){
+    document.getElementById('depositComplete').style.display = "none"
+    document.getElementById('enterAmount').style.display = "block"
+    document.getElementById('token1text').innerHTML = "ETH"
+    document.getElementById('token2text').innerHTML = "CRV"
+    document.getElementById('token3').style.display = "none"
+})
+$('#pool4').click(function(){
+    document.getElementById('depositComplete').style.display = "none"
+    document.getElementById('enterAmount').style.display = "block"
+    document.getElementById('token1text').innerHTML = "CRV"
+    document.getElementById('token2').style.display = "none"
+    document.getElementById('token3').style.display = "none"
+})
+$('#depositButton').click(function(){
+    document.getElementById('enterAmount').style.display = "none"
+    document.getElementById('depositComplete').style.display = "block"
+})
+</script>
+</html>
