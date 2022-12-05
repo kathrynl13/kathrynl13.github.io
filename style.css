@@ -27,10 +27,9 @@ a:active:hover{
     width: 150px;
 }
 .welcomeHeader{
-    padding-top: 10px;
     text-align: center;
     color:#DEEFE7;
-    padding-bottom: 190px;
+    padding-bottom: 160px;
 }
 .textEffect{
     font-family: sans-serif;
@@ -74,4 +73,19 @@ a:active:hover{
     border-width: 10px;
     border-style: inset;
 }
-
+form{
+    align-items: center;
+}
+option{
+    background-color: #002333;
+    color: #DEEFE7;
+}
+select{
+    background-color: #002333;
+    color: #DEEFE7;
+    font-family: 'Tonnelier', sans-serif;
+}
+.definePlayPool{
+    display: flex;
+    justify-content: center;
+}
