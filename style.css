@@ -76,11 +76,7 @@ a:active:hover{
 form{
     align-items: center;
 }
-option{
-    background-color: #002333;
-    color: #DEEFE7;
-}
-select{
+.myOptions{
     background-color: #002333;
     color: #DEEFE7;
     font-family: 'Tonnelier', sans-serif;
@@ -88,4 +84,5 @@ select{
 .definePlayPool{
     display: flex;
     justify-content: center;
+    align-content: center;
 }
