@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stollayto: Get Stokens</title>
+    <title>Stollayto: Rewards</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/tonnelier" rel="stylesheet">
+    <style>
+        .rowTemplate{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+    </style>
 </head>
 <body>
     <div class="navBanner">
@@ -22,6 +30,54 @@
             <a href="whitePaper.html">Whitepaper</a>
         </div>
     </div>
-    
+    <h4 class="border" style="background-color: #002333;color: #DEEFE7;padding:10px;font-size: larger;text-align: center; margin-left: 500px;margin-right: 500px;">MStokens</h4>
+    <br><br>
+    <div class="rowTemplate">
+        <div class="border" style="background-color:#DEEFE7;padding: 10px; margin:10px;width: 200px;">
+            <p style="text-align: center;">Stollayto receive boosted rewards from Curve </p>
+        </div>
+        <img src="images/right-arrow.png" style="width:100px">
+        <div class="border" style="background-color:#DEEFE7;padding: 10px;margin:10px;">
+            <ul >
+                <li>XAI + FRAX + USDC Curve Pool <strong>42%</strong> APY</li>
+                <li>USDT + WBTC + ETH Curve Pool <strong>28%</strong> APY</li>
+                <li>ETH + CRV Curve Pool <strong>15%</strong> APY</li>
+            </ul>
+        </div>
+        <img src="images/right-arrow.png" style="width:100px">
+        <div class="border" style="background-color:#DEEFE7;padding: 10px;margin:10px;">
+            <p><strong>85%</strong> of the yield collected is reward payout</p>
+            <p><strong>15%</strong> of the yield collected is used for protocol maintenance</p>
+            <ul>
+                <li>5% fee for Stollayto</li>
+                <li>5% to Jackpot Pool</li>
+                <li>5% remains in the rewards pool as a buffer</li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <h4 class="border" style="background-color: #002333;color: #DEEFE7;padding:10px;font-size: larger;text-align: center; margin-left: 500px;margin-right: 500px;">JStokens</h4>
+    <div class="rowTemplate">
+        <div class="border" style="background-color:#DEEFE7;padding: 10px; margin:10px;width: 200px;">
+            <p style="text-align: center;">User signed up</p>
+        </div>
+        <div>
+            <img src="images/right_up.png" style="width:100px">
+            <br>
+            <img src="images/down_right.png" style="width:100px">
+        </div>
+        <div class="rowTemplate">
+            <div >
+                <div class="border" style="background-color:#DEEFE7;padding: 10px; margin:10px;">
+                    <h3>User Signs Up</h3>
+                    <p style="text-align: center;">Users receive 1 JStoken the moment they connect their wallet address to Stollayto and deposit a minimum of 100 USDT into any liquidity pool. The address is linked to a phone number to ensure people can only receive 1 JStoken upon signing up.</p>
+                </div>
+                <div class="border" style="background-color:#DEEFE7;padding: 10px; margin:10px;">
+                    <h3>Random Drop Model</h3>
+                    <p style="text-align: center;">After the liquidity pool reaches a certain threshold (>$10K), Stollayto will randomly drop 1 JStokens to all users to incentivize users to remain active on the platform and reward them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
