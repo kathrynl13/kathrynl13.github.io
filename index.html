@@ -59,7 +59,7 @@
                         </div>
                         <div id="skills-content" style="display: none;">
                             <ul>
-                                <li> <strong>Back End: </strong> Java, Python, C, C++, Julia</li>
+                                <li> <strong>Back End: </strong> Java, Python, C++, Julia</li>
                                 <br>
                                 <li> <strong>Front End: </strong> JavaScript, HTML, CSS, Bootstrap</li>
                                 <br>
@@ -287,10 +287,82 @@
         <p>Interactive web application to play three player dot and boxes. Players either create a new game and 
             generate a join code or enter a join code to join an existing game. Players take turns drawing lines, 
             if they complete a box with the line drawn they win that box and receive an additional turn. 
-            The goal of the game is to win the greatest number of boxes.  </h6>
+            The goal of the game is to win the greatest number of boxes.</p>
+        <h6><strong>Technologies: </strong>HTML, CSS, JavaScript, Socket IO</h6>
         <div class="iframeCon">
             <iframe src="https://www.youtube.com/embed/nJBWNGdtO0A" frameborder="0"></iframe>
         </div>
+    </div>
+
+    <div id="project6content" class="projectContent" style="display: none;">
+        <div class="flexHorz">
+            <a href="#projects" id="back" class="aButton">Back</a>
+            <h1>Anti-Disturber</h1>
+        </div>
+        <p>The  Anti-Disturber is a method to let people approaching a room know that the person inside the room 
+            is occupied and does not wish to be disturbed. The Anti-Disturber allows the user to set a timer for 
+            the length of quiet time using a joystick and LED display then places the device outside their door. 
+            Until the quiet time is up, motion of an approaching person is detected by the PIR sensor and a red 
+            light and warning appears to not disturb. Note: this was a group acedemic project.</p>
+        <h6><strong>Technologies: </strong>C++, Ardunio, PIR Sensor, LED Display</h6>
+        <a href="https://github.com/kathrynl13/CPSC581/tree/main/Project%204" target="_blank" class="github projectExternalLink"><i class="fa fa-github"></i></a> 
+        <a class="aButton" href="https://teamlepinee.wixsite.com/kathrynlepine/copy-of-project-3" target="_blank">Implementation Walkthrough</a>
+        <br><br>
+        <div class="iframeCon">
+            <iframe src="https://www.youtube.com/embed/wasqcnnaP1o" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div id="project7content" class="projectContent" style="display: none;">
+        <div class="flexHorz">
+            <a href="#projects" id="back" class="aButton">Back</a>
+            <h1>Audio Visual Phone Unlock</h1>
+        </div>
+        <p>Audio Visual Phone Unlock is a unique take on one way to unlock a phone. User hears an audio prompt 
+            describing a hand gesture expected to unlock the phone. User must allow camera access and perform 
+            the hand gesture. Harnessing the power of machine learning from the Teachable Machine 
+            (https://teachablemachine.withgoogle.com/) we can detect if the user performed the gesture 
+            correctly, if the gesture was performed correctly access is granted. </p>
+        <h6><strong>Technologies: </strong>HTML, Bootstrap, CSS, JavaScript</h6>
+        <a href="https://github.com/kathrynl13/CPSC581/tree/main/Project%202/sensor_input" target="_blank" class="github projectExternalLink"><i class="fa fa-github"></i></a> 
+        <div class="flexHorz multipleLinks">
+            <a class="aButton" href="https://narrow-wary-cosmonaut.glitch.me/" target="_blank">Check it Out Here!</a>
+            <a class="aButton" href="https://teamlepinee.wixsite.com/kathrynlepine/copy-of-project-1" target="_blank">Implementation Walkthrough</a>
+        </div>
+    </div>
+
+    <div id="project8content" class="projectContent" style="display: none;">
+        <div class="flexHorz">
+            <a href="#projects" id="back" class="aButton">Back</a>
+            <h1>Microservices Through TCP and UDP</h1>
+        </div>
+        <p>Command line application that offers three different microservices for multiple clients: translator, 
+            currency, and voting platform. If you would like to connect multiple clients, you will need to run the 
+            client.c program on multiple terminals. You will only interact and type commands into the terminal running 
+            client.c. Once client is connected to the indirection server you can use the microservices. You may choose 
+            the services “1” translator, “2” currency, “3” voting, “4” quit client, and “0” will take you to the main 
+            menu with all the microservices. Client to indirection is a TCP connection, indirection to the microservices 
+            is UDP. </p>
+        <p>Microservices: (1) Voting only allows you to see the results once you have voted. A client can vote as many 
+            times as they would like. They key is used for encryption is random int between 0 and 9.  (2) Translator 
+            supports five words: hello, goodbye, no, yes, thank you. (3) Currency supports CAN to BIT, US, EUR, GBP 
+            all using predefined exchanged values. </p>
+        <h6><strong>Technologies: </strong>C++, TCP, UDP</h6>
+        <a href="https://github.com/kathrynl13/CPSC441" target="_blank" class="github projectExternalLink"><i class="fa fa-github"></i></a> 
+    </div>
+
+    <div id="project9content" class="projectContent" style="display: none;">
+        <div class="flexHorz">
+            <a href="#projects" id="back" class="aButton">Back</a>
+            <h1>HTTP Proxy</h1>
+        </div>
+        <p>Command line program working as a simple HTTP proxy. The program allows you to dynamically unblock 
+            and block content through the proxy using key words. Uses simple interactions between client 
+            and server using HTTP/1.1. Can deliver web pages unaltered and redirection when appropriate. Can 
+            parse HTTP response and make appropriate decisions about what content to block either by referencing 
+            the URL or the body of the HTTP response. </p>
+        <h6><strong>Technologies: </strong>C++, TCP</h6>
+        <a href="https://github.com/kathrynl13/CPSC441/tree/Assignment1" target="_blank" class="github projectExternalLink"><i class="fa fa-github"></i></a> 
     </div>
 
     <script src="script.js"></script>
