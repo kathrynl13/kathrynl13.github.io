@@ -199,7 +199,7 @@ strong{
     align-items: center;
 }
 
-#projectBoxSection div{
+#projectBoxSection a{
     margin: 1%;
     color: black;
     width: 250px;
@@ -210,6 +210,7 @@ strong{
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration: none;
 }
 #project1{
     background: linear-gradient(rgba(211, 166, 164, 0.6), rgba(211, 166, 164, 0.6)), url("secretSanta.png");

@@ -38,14 +38,14 @@ $("#project1, #project2, #project3, #project4, #project5, #project6, #project7, 
 })
 
 //switch to project page
-$('#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8, #project9, #project10, #project11').click(function(){
+/* $('#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8, #project9, #project10, #project11').click(function(){
     console.log(this.id)
     $('#content').css("display", "none")
     $('#' + this.id + "content").css("display", "block")
-})
+}) */
 
 //switch back to the main page 
-$('#aboutLink, #projectsLink, #contantLink, #back').click(function(){
+/* $('#aboutLink, #projectsLink, #contantLink, #back').click(function(){
     $('#content').css("display", "block")
     $('#project1content').css("display", "none")
     $('#project2content').css("display", "none")
@@ -58,4 +58,5 @@ $('#aboutLink, #projectsLink, #contantLink, #back').click(function(){
     $('#project9content').css("display", "none")
     $('#project10content').css("display", "none")
     $('#project11content').css("display", "none")
-})
+}) */
+
